@@ -1,0 +1,69 @@
+{
+    "slug": "shipwright",
+    "title": "Shipwright",
+    "summary": "A self-hosted preview-deploy bot for monorepos that don't fit Vercel's mold.",
+    "description": "Hooks into GitHub PR events, builds the affected packages in isolated containers, and posts a comment with per-app URLs. Caches aggressively so a one-line README change deploys in under five seconds.",
+    "caseStudy": {
+      "problem": "Preview deployments on a large monorepo were either too slow — rebuilding everything on every PR — or too expensive, relying on managed services that didn't understand the repo's package boundaries and billed per build regardless of what changed.",
+      "approach": "Built a GitHub App that listens to PR events and runs a dependency-graph diff to determine which packages were actually affected. Only those packages get built, each in an isolated Docker container for a clean environment. Results are posted back to the PR as a comment with per-app preview URLs. Layer caching is tuned aggressively so incremental builds skip as much work as possible.",
+      "outcome": "Preview deploy time dropped from over twelve minutes to under thirty seconds for typical single-package changes. CI costs fell significantly because most PRs now build only one or two packages instead of the entire monorepo. A README-only change deploys in about five seconds.",
+      "highlights": [
+        "Dependency-graph diffing to scope builds to affected packages only",
+        "Isolated Docker containers per app for reproducible environments",
+        "Aggressive layer caching — README-only PRs deploy in ~5 seconds",
+        "GitHub App with webhook signature validation"
+      ]
+    },
+    "tags": ["Go", "Docker", "GitHub Actions"],
+    "year": 2024,
+    "links": {
+      "source": "https://github.com/"
+    },
+    "featured": true
+  },
+  {
+    "slug": "type-tutor",
+    "title": "Type Tutor",
+    "summary": "A typing trainer that learns which keys you fumble and drills them until you don't.",
+    "description": "Tracks per-bigram error rates and generates practice text weighted toward your weak spots. Local-first — nothing leaves the browser. Built as a single-page React app with IndexedDB persistence.",
+    "caseStudy": {
+      "problem": "Generic typing trainers practice every key with equal weight, but errors cluster around specific bigrams — pairs of consecutive keys. Drilling random text wastes time on transitions you already type accurately and barely touches the ones you consistently fumble.",
+      "approach": "Tracked per-bigram error rates in IndexedDB using an exponential decay model so recent mistakes matter more than old ones. A weighted sampler uses those rates to generate practice text that surfaces weak spots more frequently while still including comfortable bigrams for rhythm. Web Audio API provides subtle auditory feedback without disruptive sound effects.",
+      "outcome": "Users see measurable improvement on their personal weak bigrams within a fifteen-minute session. The local-first architecture means zero server latency and complete privacy — no keystroke data ever leaves the browser.",
+      "highlights": [
+        "Per-bigram error rate tracking with exponential decay",
+        "Weighted text generation targeting individual weak spots",
+        "Web Audio API for subtle, non-distracting keystroke feedback",
+        "Fully local-first with IndexedDB persistence"
+      ]
+    },
+    "tags": ["React", "IndexedDB", "Web Audio"],
+    "year": 2024,
+    "links": {
+      "live": "https://example.com/type-tutor"
+    },
+    "featured": false
+  },
+  {
+    "slug": "atlas",
+    "title": "Atlas",
+    "summary": "A small CLI for browsing JSON like a filesystem.",
+    "description": "Type `atlas data.json`, then `cd users/0/orders` and `ls`. Pipe-friendly, scriptable, and handles 200MB files without flinching. Distributed as a single static binary.",
+    "caseStudy": {
+      "problem": "Debugging large JSON files in production meant either piping through jq — powerful but with a steep learning curve — or downloading the file and opening it in a GUI, which is slow and means leaving the terminal. Neither option felt natural for quick, exploratory inspection.",
+      "approach": "Modeled the JSON structure as a virtual filesystem, giving users the familiar cd, ls, and cat mental model they already know. Written in Rust for a single static binary with no runtime dependencies. Memory-mapped I/O lets Atlas navigate files larger than available RAM without loading everything into memory upfront.",
+      "outcome": "Distributed as a single binary with no install friction — download and run. Handles 200 MB JSON files without flinching. Adopted by several teams as a go-to debugging utility for inspecting API responses and data exports directly in the terminal.",
+      "highlights": [
+        "Virtual filesystem abstraction over arbitrary JSON structure",
+        "Memory-mapped I/O handles files larger than available RAM",
+        "Pipe-friendly output in JSON and newline-delimited formats",
+        "Compiles to a single static binary for any target platform"
+      ]
+    },
+    "tags": ["Rust", "CLI"],
+    "year": 2023,
+    "links": {
+      "source": "https://github.com/"
+    },
+    "featured": false
+  }

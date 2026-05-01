@@ -1,0 +1,11 @@
+{
+  "name": "Yasith Nirmana",
+  "role": "Software Engineer",
+  "tagline": "Building thoughtful, fast, and reliable software.",
+  "location": "Available remotely",
+  "email": "yasithnirmana99@gmail.com",
+  "socials": [
+    { "label": "GitHub", "href": "https://github.com/YasithNirmana" },
+    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/yasithnirmana" }
+  ]
+}

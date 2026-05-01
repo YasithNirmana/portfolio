@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "property-management-system",
+    "title": "Property Management System (PMS)",
+    "summary": "A centralized digital ecosystem that automates property management by replacing manual, spreadsheet-heavy workflows. It streamlines tenant tracking, finances, and reporting to slash administrative overhead and eliminate human error in complex calculations.",
+    "description": "Built to replace a tangle of spreadsheets. Ledger imports transactions from CSV/OFX, categorizes them with rules, and renders monthly balance and cashflow views. The data layer is a tiny double-entry engine so reports always reconcile.",
+    "caseStudy": {
+      "problem": "A real estate agency in Malaysia was managing an expanding portfolio of properties using fragmented manual systems—physical logs, disconnected Excel sheets, and manual invoice generation. This \"paper-first\" approach led to significant challenges such as high operational costs, financial leakage and data silios",
+      "approach": "Applying a \"Product Mindset,\" I conducted a thorough audit of the agency's workflow to identify the primary bottlenecks. I then engineered a custom solution using the NextJS and PostgreSQL alongside with Digital Ocean platform to modernize their operations.",
+      "outcome": "90% Reduction in Admin Time. The PMS streamlined tenant management, automated financial tracking, and provided real-time reporting. This transformation not only saved the agency significant time but also improved accuracy and scalability, allowing them to focus on growth rather than administrative tasks.",
+      "highlights": [
+        "Full-Stack Ownership: Handled everything from database schema design to frontend UX and DevOps.",
+        "Business Impact: Demonstrated the ability to translate MBA-level risk management principles into functional software code.",
+        "Scalable Architecture: Designed a modular system capable of supporting thousands of units across multiple regions."
+      ],
+      "demoNote": "Due to the proprietary nature of this business tool and the sensitivity of the data managed, a live demo is not publicly available."
+    },
+    "tags": ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Digital Ocean"],
+    "year": 2025,    
+    "featured": true
+  }
+]

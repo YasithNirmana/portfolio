@@ -1,0 +1,16 @@
+{
+  "paragraphs": [
+    "I am a Full-Stack Software Engineer with over four years of experience building scalable web applications and high-performance digital solutions. I thrive at the intersection of technical precision and business logic, focusing on creating seamless user experiences backed by robust, containerized architectures.",
+    "Whether I’m developing comprehensive management systems or engineering automation tools to replace manual workflows, my goal is always the same: to turn complex operational challenges into intuitive, automated dashboards."
+  ],
+  "skills": [
+    "TypeScript",
+    "React / Next.js",
+    "Node.js",
+    "Python",
+    "PostgreSQL",
+    "Tailwind CSS",
+    "Docker",
+    "AWS"
+  ]
+}
