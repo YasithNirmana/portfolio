@@ -4,14 +4,6 @@ export type Project = {
   slug: string;
   title: string;
   summary: string;
-  description?: string;
-  caseStudy?: {
-    problem: string;
-    approach: string;
-    outcome: string;
-    highlights?: string[];
-    demoNote?: string;
-  };
   tags: string[];
   year: number;
   links?: {

@@ -1,16 +1,22 @@
 {
   "paragraphs": [
-    "I am a Full-Stack Software Engineer with over four years of experience building scalable web applications and high-performance digital solutions. I thrive at the intersection of technical precision and business logic, focusing on creating seamless user experiences backed by robust, containerized architectures.",
-    "Whether I’m developing comprehensive management systems or engineering automation tools to replace manual workflows, my goal is always the same: to turn complex operational challenges into intuitive, automated dashboards."
+    "I am a Full-Stack Software Engineer specilizing in the design and development of scalable web applications. With expereince delevering enterprise-grade software solutions for organizations such as Vetstoria and DHL, I have a proven ability to bridge business requirements with technical solutions that improve efficiency, scalability, and user experience. My expertise includes the full software development lifecycle, from requirements gathering and architecture design to implementation, deployment, and optimization.",
+    "I am passionate about solving real-world problems through technology. Beyond developing software, I actively seek opportunities to automate processes and streamline workflows, both in my own work and for businesses. Using automation, AI and modern software solutions, I help organizations reduce manual effort, improve operational efficiency, and achieve long-term coast savings. You can explore a selection of my projects / case studies to see how I have transformed challenges into solutions"
   ],
   "skills": [
+    "Next.js",
     "TypeScript",
-    "React / Next.js",
     "Node.js",
-    "Python",
+    "React",
+    "Vue",
     "PostgreSQL",
+    "MySQL",
+    "RESTful APIs",
+    "Claude",
+    "OpenAI",
+    "n8n",
+    "Supabase",
     "Tailwind CSS",
-    "Docker",
-    "AWS"
+    "Docker"
   ]
 }
