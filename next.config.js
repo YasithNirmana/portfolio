@@ -1,12 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  output: 'export', // Required for GitHub Pages
   images: {
-    unoptimized: true,
+    unoptimized: true, // Required for static export
   },
-
-  basePath: '/portfolio',
-  assetPrefix: '/portfolio/', 
+  // If your site is at the root of the domain, basePath should be empty
+  basePath: '', 
 };
 
-module.exports = nextConfig;
+export default nextConfig;
