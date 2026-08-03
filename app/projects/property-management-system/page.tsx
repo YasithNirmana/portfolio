@@ -30,7 +30,7 @@ export default function CaseStudyPage() {
           Technology Stack
         </p>
         <ul className="mt-3 flex flex-wrap gap-x-3 gap-y-1">
-          {["Next.js", "TypeScript", "PostgreSQL", "Prisma", "DigitalOcean", "Twilio"].map((tag) => (
+          {["Vue.js", "TypeScript", "PostgreSQL", "Prisma", "DigitalOcean", "Twilio"].map((tag) => (
             <li key={tag} className="font-mono text-sm text-fg/80">
               {tag} <span className="text-muted last:hidden ml-2">•</span>
             </li>

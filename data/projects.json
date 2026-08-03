@@ -4,7 +4,7 @@
     "title": "Property Management System (PMS)",
     "summary": "A centralized digital application that automates property management by replacing manual, spreadsheet-heavy workflows. It streamlines tenant tracking, finances, and reporting to reduce administrative overhead and eliminate human error in complex calculations.",
     "tags": [
-      "Next.js",
+      "Vue.js",
       "TypeScript",
       "PostgreSQL",
       "Prisma",
